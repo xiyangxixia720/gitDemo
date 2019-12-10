@@ -1,0 +1,112 @@
+//
+//  PrefixHeader.pch
+//  ShoppingMall
+//
+//  Created by mc on 2019/6/27.
+//  Copyright © 2019 mc. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/**************** 服务器 *********************/
+//外网
+#define MYURL @"http://116.62.19.89/"
+//内网
+//#define MYURL @"http://192.168.0.125:8011/"
+
+/**
+ homeHead
+ *
+ */
+#define headFolat SCREEN_H * 1.05
+
+/**
+ * 请求数据量
+ */
+#define LOADNUM 100
+
+/**************************头文件 *********************/
+#import "UIImageView+WebCache.h"
+#import <YYKit.h>
+#import <Masonry.h>
+#import <AFNetworking.h>
+#import <ProgressHUD.h>
+#import <NSObject+YYModel.h>
+#import <MJRefresh.h>
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+#import <BRPickerView.h>
+#import <SDCycleScrollView.h>
+#import <STPopup/STPopup.h>
+
+
+#import "LXAVPlayer.h"
+#import "LxButton.h"
+#import "UIView+LX_Frame.h"
+#import "UILabel+LXLabel.h"
+
+
+
+#import "FLTools.h"
+#import "HttpRequest.h"
+#import "NSDictionary+Category.h"
+#import "ZZYPhotoHelper.h"
+#import "FLButton.h"
+#import "PWLoginViewController.h"
+#import "PWLoginViewController.h"
+
+/************************* 弱引用 ******************/
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define WEAK_SELF  __weak __typeof(&*self)weakSelf = self;
+
+
+/************************* 适配相关 ******************/
+/**
+ * 屏幕宽高
+ */
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
+
+/**
+ * IphoneX 及相关安全距离
+ */
+#define IS_IPHONEX (([[UIApplication sharedApplication] statusBarFrame].size.height == 44.0f) ? (YES):(NO))
+#define Y_Height (IS_IPHONEX ? ([[UIScreen mainScreen] bounds].size.height-20):([[UIScreen mainScreen] bounds].size.height))
+#define Status_Height (IS_IPHONEX ? 44.0 : 20.0)
+#define Nav_Height (IS_IPHONEX ? 88.0 : 64.0)
+#define Nav_Custom_Height (IS_IPHONEX ? 84.0 : 60.0)
+#define MainScreenRect       [UIScreen mainScreen].bounds
+
+#define BACKCOLOR rgba(239,239,244,1)
+/*TabBar高度*/
+#define kTabBarHeight (CGFloat)(IS_IPHONEX?(49.0 + 34.0):(49.0))
+
+#define HomeIndicator (CGFloat)(IS_IPHONEX?(34):(0))
+
+/************************* 颜色设置 ******************/
+#define rgba(r, g, b, a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+
+#define MainTonal  rgba(255,70,70,1)
+
+
+/************************ 快捷方法  ******************/
+/**
+ * 字符串是否为空
+ */
+#define fStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+
+/**
+ * 数据持久化
+ */
+#define fUserDefaults [NSUserDefaults standardUserDefaults]
+
+// debug下打印，release下不打印
+#ifdef DEBUG // 调试状态, 打开LOG功能
+
+#define DLog( s, ... ) printf("method: %s %s\n", __PRETTY_FUNCTION__, [[NSString stringWithFormat:(s), ##__VA_ARGS__] UTF8String] )
+
+#else// 发布状态, 关闭LOG功能
+#define DLog( s, ... )
+#endif
+
+#endif /* Header_h */

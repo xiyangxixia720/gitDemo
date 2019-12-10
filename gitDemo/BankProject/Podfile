@@ -1,0 +1,37 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'BankProject' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for BankProject
+
+  target 'BankProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'BankProjectUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+pod 'SDCycleScrollView'
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'ProgressHUD'
+pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'UITableView+FDTemplateLayoutCell'
+pod 'YYKit'
+pod 'DZNEmptyDataSet'
+pod 'STPopup'
+pod 'HXWeiboPhotoPicker'
+pod 'CKPagerComponent'
+pod 'BRPickerView'
+pod 'ZQPlayer'
+
+pod 'WechatOpenSDK'
+pod 'AlipaySDK-iOS'
+end

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BoutiqueV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnL-6C-xoo">
+                    <rect key="frame" x="15" y="10" width="184.5" height="210"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img222" translatesAutoresizingMaskIntoConstraints="NO" id="dkt-EC-kqq">
+                            <rect key="frame" x="0.0" y="0.0" width="184.5" height="210"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9882352941176471" green="0.93725490196078431" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="dkt-EC-kqq" firstAttribute="leading" secondItem="fnL-6C-xoo" secondAttribute="leading" id="B63-9z-gO1"/>
+                        <constraint firstItem="dkt-EC-kqq" firstAttribute="top" secondItem="fnL-6C-xoo" secondAttribute="top" id="DOy-uA-mUp"/>
+                        <constraint firstAttribute="trailing" secondItem="dkt-EC-kqq" secondAttribute="trailing" id="Wy3-Pd-3m4"/>
+                        <constraint firstAttribute="bottom" secondItem="dkt-EC-kqq" secondAttribute="bottom" id="Yxf-g3-EW7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bO0-BY-urM">
+                    <rect key="frame" x="210" y="10" width="191" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img222" translatesAutoresizingMaskIntoConstraints="NO" id="Ctf-ad-iXS">
+                            <rect key="frame" x="0.0" y="0.0" width="191" height="100"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.97647058823529409" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ctf-ad-iXS" firstAttribute="leading" secondItem="bO0-BY-urM" secondAttribute="leading" id="Afv-R4-0gF"/>
+                        <constraint firstAttribute="bottom" secondItem="Ctf-ad-iXS" secondAttribute="bottom" id="TZR-hW-Ich"/>
+                        <constraint firstAttribute="trailing" secondItem="Ctf-ad-iXS" secondAttribute="trailing" id="XPc-cI-ZOn"/>
+                        <constraint firstItem="Ctf-ad-iXS" firstAttribute="top" secondItem="bO0-BY-urM" secondAttribute="top" id="dpb-vL-aY7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWy-hP-16T">
+                    <rect key="frame" x="209.5" y="120" width="189.5" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img222" translatesAutoresizingMaskIntoConstraints="NO" id="12d-Sh-eNe">
+                            <rect key="frame" x="0.0" y="0.0" width="189.5" height="100"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.81568627450980391" green="0.9882352941176471" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="12d-Sh-eNe" secondAttribute="bottom" id="4sj-tc-VBc"/>
+                        <constraint firstAttribute="trailing" secondItem="12d-Sh-eNe" secondAttribute="trailing" id="5g4-IK-98j"/>
+                        <constraint firstItem="12d-Sh-eNe" firstAttribute="top" secondItem="yWy-hP-16T" secondAttribute="top" id="W1A-aL-aLW"/>
+                        <constraint firstItem="12d-Sh-eNe" firstAttribute="leading" secondItem="yWy-hP-16T" secondAttribute="leading" id="hHS-39-U3J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yWy-hP-16T" secondAttribute="trailing" constant="15" id="1WD-MU-llz"/>
+                <constraint firstAttribute="bottom" secondItem="fnL-6C-xoo" secondAttribute="bottom" constant="10" id="5J1-wc-V9o"/>
+                <constraint firstItem="bO0-BY-urM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="6pO-Mf-ZZK"/>
+                <constraint firstItem="bO0-BY-urM" firstAttribute="leading" secondItem="fnL-6C-xoo" secondAttribute="trailing" constant="10.5" id="9Wz-qI-8BL"/>
+                <constraint firstItem="fnL-6C-xoo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Ibi-N0-ylO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bO0-BY-urM" secondAttribute="trailing" constant="13" id="JZY-Hc-eV9"/>
+                <constraint firstItem="bO0-BY-urM" firstAttribute="width" secondItem="fnL-6C-xoo" secondAttribute="width" constant="6.5" id="K0j-Fm-Cz8"/>
+                <constraint firstItem="yWy-hP-16T" firstAttribute="height" secondItem="bO0-BY-urM" secondAttribute="height" id="Xk8-Sw-hSu"/>
+                <constraint firstItem="yWy-hP-16T" firstAttribute="leading" secondItem="fnL-6C-xoo" secondAttribute="trailing" constant="10" id="avs-u5-qb4"/>
+                <constraint firstItem="yWy-hP-16T" firstAttribute="top" secondItem="bO0-BY-urM" secondAttribute="bottom" constant="10" id="iHo-Ok-Xqg"/>
+                <constraint firstItem="fnL-6C-xoo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ivf-JK-bef"/>
+                <constraint firstAttribute="bottom" secondItem="yWy-hP-16T" secondAttribute="bottom" constant="10" id="yXk-iV-xdP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backFirst" destination="fnL-6C-xoo" id="axS-a4-ZnJ"/>
+                <outlet property="backSecond" destination="bO0-BY-urM" id="mpE-zI-YRe"/>
+                <outlet property="backThird" destination="yWy-hP-16T" id="SRt-0L-pG6"/>
+                <outlet property="img1" destination="dkt-EC-kqq" id="s3c-np-OxJ"/>
+                <outlet property="img2" destination="Ctf-ad-iXS" id="gqk-16-uMd"/>
+                <outlet property="img3" destination="12d-Sh-eNe" id="FGa-zX-pGJ"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="39.508928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img222" width="230" height="230"/>
+    </resources>
+</document>

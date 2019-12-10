@@ -1,0 +1,1 @@
+../../../CKPagerComponent/CKPagerComponent/Classes/ISegmentFactory.h

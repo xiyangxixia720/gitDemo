@@ -1,0 +1,96 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AlipaySDK-iOS (15.5.9)
+  - BRPickerView (2.2.1)
+  - CKPagerComponent (1.0.0)
+  - DZNEmptyDataSet (1.8.1)
+  - HXWeiboPhotoPicker (1.2)
+  - Masonry (1.1.0)
+  - MJRefresh (3.2.0)
+  - ProgressHUD (2.60)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - STPopup (1.8.7)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - WechatOpenSDK (1.8.4)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+  - ZQPlayer (0.2.4):
+    - Masonry
+
+DEPENDENCIES:
+  - AFNetworking
+  - AlipaySDK-iOS
+  - BRPickerView
+  - CKPagerComponent
+  - DZNEmptyDataSet
+  - HXWeiboPhotoPicker
+  - Masonry
+  - MJRefresh
+  - ProgressHUD
+  - SDCycleScrollView
+  - SDWebImage
+  - STPopup
+  - "UITableView+FDTemplateLayoutCell"
+  - WechatOpenSDK
+  - YYKit
+  - ZQPlayer
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AlipaySDK-iOS
+    - BRPickerView
+    - CKPagerComponent
+    - DZNEmptyDataSet
+    - HXWeiboPhotoPicker
+    - Masonry
+    - MJRefresh
+    - ProgressHUD
+    - SDCycleScrollView
+    - SDWebImage
+    - STPopup
+    - "UITableView+FDTemplateLayoutCell"
+    - WechatOpenSDK
+    - YYKit
+    - ZQPlayer
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AlipaySDK-iOS: 1c5283b30977a24acecc0114662697f7dc78f618
+  BRPickerView: 0590a8c5de9bd98c6b4e4f117a3dff6de287d5b2
+  CKPagerComponent: 3e8acbaa6d9de5a30f03fed142886e934e7730d6
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  HXWeiboPhotoPicker: de26c6319c671227ba6bca5ef5da7af4d6338f81
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  ProgressHUD: 4e4efbaf4f5de8bd32e0c4c3b6644a90ea1a8c3e
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  STPopup: a9045557bc48a0df51fbb7bf0544447c5fe84d34
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZQPlayer: 53ace9603213880142108f43329c4fb9511f100e
+
+PODFILE CHECKSUM: 625822582004f44e60ca5e1cd3ec37cecd635f90
+
+COCOAPODS: 1.6.1

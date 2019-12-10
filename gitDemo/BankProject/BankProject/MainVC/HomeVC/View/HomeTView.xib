@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeTView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="甄选优品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vey-4j-wQn">
+                    <rect key="frame" x="30" y="24" width="70" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="Gjn-K6-Vxq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more" translatesAutoresizingMaskIntoConstraints="NO" id="XlN-NS-eUc">
+                    <rect key="frame" x="370" y="28" width="14" height="14"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiP-S8-tLQ">
+                    <rect key="frame" x="321" y="20" width="39" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="La5-8k-D3z"/>
+                    </constraints>
+                    <state key="normal" title=" 更多 ">
+                        <color key="titleColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XlN-NS-eUc" secondAttribute="trailing" constant="30" id="2RH-6F-3eh"/>
+                <constraint firstItem="iiP-S8-tLQ" firstAttribute="centerY" secondItem="XlN-NS-eUc" secondAttribute="centerY" id="CC7-38-elv"/>
+                <constraint firstItem="XlN-NS-eUc" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="R8I-ss-erJ"/>
+                <constraint firstItem="vey-4j-wQn" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="dPx-oL-dtD"/>
+                <constraint firstItem="XlN-NS-eUc" firstAttribute="leading" secondItem="iiP-S8-tLQ" secondAttribute="trailing" constant="10" id="diL-yL-VLK"/>
+                <constraint firstItem="vey-4j-wQn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="pkO-rD-2E9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="jianTouImg" destination="XlN-NS-eUc" id="WvU-DY-53P"/>
+                <outlet property="moreBtn" destination="iiP-S8-tLQ" id="R78-4G-5vT"/>
+                <outlet property="titleLabel" destination="vey-4j-wQn" id="0RG-Yn-hFT"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="more" width="14" height="14"/>
+    </resources>
+</document>
